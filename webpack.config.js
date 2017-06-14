@@ -10,7 +10,7 @@ module.exports =  {
 
     entry: "./contacts",
     output: {
-        path: __dirname + '/public',
+        path: __dirname + '/docs',
         filename: "app.js",
         library: "contacts"
     },

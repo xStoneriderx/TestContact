@@ -30,7 +30,13 @@
         <h4 class="modal-title">Контакт</h4>
       </div>
       <div class="modal-body">
-        <div id="contactBody"></div>
+        <div id="contactBody">
+            <div class="contact__info">Имя: <span data-name="name"></span></div>
+            <div class="contact__info">Телефон: <span data-name="tel"></span></div>
+            <div class="contact__info">E-mail: <span data-name="email"></span></div>
+            <div class="contact__info">Skype: <span data-name="skype"></span></div>
+            <div class="contact__info">Facebook: <span data-name="facebook"></span></div>
+        </div>
         <button class="btn btn-danger" id="deleteContact">Удалить</button>
         <button class="btn btn-success" id="changeContact">Изменить</button>
       </div>
@@ -51,19 +57,19 @@
         <div class="modal-body">
             <input type="hidden" name="id">
             <div class="input__container">
-              <label for="name" class="col-md-2">Имя<span class="red_color">*</span></label><input type="text" id="name" name="name" required>
+              <label for="name">Имя<span class="red_color">*</span></label><input type="text" id="name" name="name" required>
             </div>
             <div class="input__container">
-              <label for="tel" class="col-md-2">Телефон<span class="red_color">*</span></label><input type="tel" id="tel" name="tel" required>
+              <label for="tel">Телефон<span class="red_color">*</span></label><input type="tel" id="tel" name="tel" required>
             </div>
             <div class="input__container">
-              <label for="email" class="col-md-2">E-mail</label><input type="email" id="email" name="email">
+              <label for="email">E-mail</label><input type="email" id="email" name="email">
             </div>
             <div class="input__container">
-              <label for="skype" class="col-md-2">Skype</label><input type="text" id="skype" name="skype">
+              <label for="skype">Skype</label><input type="text" id="skype" name="skype">
             </div>
             <div class="input__container">
-              <label for="facebook" class="col-md-2">Facebook</label><input type="text" id="facebook" name="facebook">
+              <label for="facebook">Facebook</label><input type="text" id="facebook" name="facebook">
             </div>
         </div>
         <div class="modal-footer">

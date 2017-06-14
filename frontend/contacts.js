@@ -57,7 +57,7 @@ document.addEventListener("DOMContentLoaded", function() {
         let contact = {
             name: 'test',
             tel: '+380444444444',
-            email: 'test',
+            email: 'test@test.com',
             skype: 'test',
             facebook: 'test',
             address: 'test'
