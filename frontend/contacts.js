@@ -100,3 +100,12 @@ document.addEventListener("DOMContentLoaded", function() {
         modal.hideAll();
     });
 });
+
+window.addEventListener('online', function(){
+    let offlineContainer = document.getElementById("offline");
+    offlineContainer.style.display = 'none';
+});
+window.addEventListener('offline', function(){
+    let offlineContainer = document.getElementById("offline");
+    offlineContainer.style.display = 'block';
+});

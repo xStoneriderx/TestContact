@@ -6785,3 +6785,8 @@ footer{
 .red_color{
     color: red;
 }
+#offline{
+    width:200px;
+    margin: auto;
+    font-size: 20px;
+}

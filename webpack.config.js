@@ -61,6 +61,8 @@ module.exports =  {
             LANG: JSON.stringify('ru')
         }),
         new ExtractTextPlugin('bundle.css'),
-        new OfflinePlugin()
+        new OfflinePlugin({
+            autoUpdate: true,
+        })
     ]
 };
