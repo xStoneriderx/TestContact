@@ -1,0 +1,12 @@
+CACHE MANIFEST
+#ver:2017-6-14 22:55:51
+#plugin:4.8.1
+
+CACHE:
+../assets/fonts/89889688147bd7575d6327160d64e760.svg
+../app.js
+../bundle.css
+../
+
+NETWORK:
+*
