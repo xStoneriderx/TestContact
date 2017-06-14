@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="Content-type" content="text/html; charset=utf-8"/>
+  <title>Contacts Test</title>
+</head>
+<body>
+<nav class="navbar navbar-inverse">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <span class="navbar-brand">Whirl Test Task</span>
+        </div>
+            <ul class="nav navbar-nav">
+                <li><a id="addTestContact" role="button">Добавить TEST контакт</a></li>
+                <li></li>
+            </ul>
+        <div class="navbar-form">
+            <div class="input-group add-on">
+                <input class="form-control" placeholder="Поиск по имени" id="filter" type="text">
+            </div>
+            <button class="btn btn-danger pull-right" id="deleteAll">Удалить ВСЕ контакты</button>
+        </div>
+    </div>
+</nav>
+<div id="showContact" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">×</button>
+        <h4 class="modal-title">Контакт</h4>
+      </div>
+      <div class="modal-body">
+        <div id="contactBody">
+            <div class="contact__info">Имя: <span data-name="name"></span></div>
+            <div class="contact__info">Телефон: <span data-name="tel"></span></div>
+            <div class="contact__info">E-mail: <span data-name="email"></span></div>
+            <div class="contact__info">Skype: <span data-name="skype"></span></div>
+            <div class="contact__info">Facebook: <span data-name="facebook"></span></div>
+        </div>
+        <button class="btn btn-danger" id="deleteContact">Удалить</button>
+        <button class="btn btn-success" id="changeContact">Изменить</button>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+<div id="editContact" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">×</button>
+        <h4 class="modal-title"></h4>
+      </div>
+      <form action="#" id="contactEdit">
+        <div class="modal-body">
+            <input type="hidden" name="id">
+            <div class="input__container">
+              <label for="name">Имя<span class="red_color">*</span></label><input type="text" id="name" name="name" required>
+            </div>
+            <div class="input__container">
+              <label for="tel">Телефон<span class="red_color">*</span></label><input type="tel" id="tel" name="tel" required>
+            </div>
+            <div class="input__container">
+              <label for="email">E-mail</label><input type="email" id="email" name="email">
+            </div>
+            <div class="input__container">
+              <label for="skype">Skype</label><input type="text" id="skype" name="skype">
+            </div>
+            <div class="input__container">
+              <label for="facebook">Facebook</label><input type="text" id="facebook" name="facebook">
+            </div>
+        </div>
+        <div class="modal-footer">
+          <button type="submit" class="btn btn-success"></button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+<div class="container">
+    <div id="contactsContainer"></div>
+    <button class="btn btn-default col-md-3 col-md-offset-1" id="addContact">Добавить контакт</button>
+</div>
+<footer class="footer navbar-fixed-bottom">
+    <div class="container">
+        <p class="text-muted">Made by Bohdan Siriy</p>
+    </div>
+</footer>
+</body>
+</html>
