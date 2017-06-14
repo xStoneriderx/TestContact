@@ -1,3 +1,5 @@
+import * as OfflinePluginRuntime from 'offline-plugin/runtime';
+OfflinePluginRuntime.install();
 import 'bootstrap/dist/css/bootstrap.css'
 import './style.css';
 import store from './store.js';

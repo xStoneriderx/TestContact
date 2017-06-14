@@ -4,6 +4,7 @@ const NODE_ENV = process.env.NODE_ENV || 'development';
 const webpack = require('webpack');
 const ExtractTextPlugin = require("extract-text-webpack-plugin");
 const HtmlWebpackPlugin = require('html-webpack-plugin');
+const OfflinePlugin = require('offline-plugin');
 
 module.exports =  {
     context: __dirname + '/frontend',
@@ -59,6 +60,7 @@ module.exports =  {
             NODE_ENV: JSON.stringify(NODE_ENV),
             LANG: JSON.stringify('ru')
         }),
-        new ExtractTextPlugin('bundle.css')
+        new ExtractTextPlugin('bundle.css'),
+        new OfflinePlugin()
     ]
 };
