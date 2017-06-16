@@ -26,7 +26,7 @@ export default {
         modal.style.display = 'block';
 
         let modalBody = document.getElementById("contactBody");
-        let spans = modalBody.getElementsByTagName('span');
+        let spans = modalBody.querySelectorAll('[data-name]');
         for (let i = 0; i < spans.length; i++) {
             let span = spans[i];
             span.innerHTML = contact[span.dataset.name];

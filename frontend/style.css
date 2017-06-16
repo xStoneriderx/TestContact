@@ -34,3 +34,6 @@ footer{
     margin: auto;
     font-size: 20px;
 }
+#changeContact{
+    float: right;
+}
