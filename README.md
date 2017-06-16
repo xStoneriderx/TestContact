@@ -1,5 +1,7 @@
 # Test task "Contact book"
 
+You can test usage on page: https://xstoneriderx.github.io/TestContact/
+
 ### Installation
 
 Install it:
@@ -14,7 +16,7 @@ npm install
 ```sh
 npm run start
 ```
-
+Open http://localhost:8080 to view it in the browser.
 ### Build
 
 
