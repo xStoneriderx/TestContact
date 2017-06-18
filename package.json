@@ -3,18 +3,32 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "start": "webpack-dev-server --inline --hot",
+    "test": "karma start",
+    "start": "webpack-dev-server --open",
     "build": "webpack"
   },
   "dependencies": {
     "bootstrap": "^3.3.7"
   },
   "devDependencies": {
+    "chai": "^3.5.0",
     "css-loader": "^0.28.4",
     "extract-text-webpack-plugin": "^2.1.2",
     "file-loader": "^0.11.2",
     "html-webpack-plugin": "^2.28.0",
+    "karma": "^1.7.0",
+    "karma-chai": "^0.1.0",
+    "karma-chrome-launcher": "^2.1.1",
+    "karma-coverage": "^1.1.1",
+    "karma-html2js-preprocessor": "^1.1.0",
+    "karma-mocha": "^1.3.0",
+    "karma-sinon": "^1.0.5",
+    "karma-sinon-chai": "^1.3.1",
+    "karma-webpack": "^2.0.3",
+    "mocha": "^3.4.2",
     "offline-plugin": "^4.8.1",
+    "sinon": "^2.3.4",
+    "sinon-chai": "^2.11.0",
     "style-loader": "^0.18.2",
     "url-loader": "^0.5.8",
     "webpack": "^2.6.1",
