@@ -23,3 +23,9 @@ Open http://localhost:8080 to view it in the browser.
 ```sh
 npm run build
 ```
+### Test
+
+
+```sh
+npm test
+```
